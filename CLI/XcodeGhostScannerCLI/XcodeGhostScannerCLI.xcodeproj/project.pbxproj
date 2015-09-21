@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA024FE31BB0505A0054A7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA024FE21BB0505A0054A7F4 /* Foundation.framework */; };
+		FA024FEF1BB0505A0054A7F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA024FEE1BB0505A0054A7F4 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA024FE21BB0505A0054A7F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA024FE71BB0505A0054A7F4 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		FA024FE81BB0505A0054A7F4 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		FA024FEA1BB0505A0054A7F4 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		FA024FED1BB0505A0054A7F4 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		FA024FEE1BB0505A0054A7F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA024FF01BB0505A0054A7F4 /* XcodeGhostScannerCLI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeGhostScannerCLI-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA024FDE1BB0505A0054A7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA024FE31BB0505A0054A7F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA024FD81BB0505A0054A7F4 = {
+			isa = PBXGroup;
+			children = (
+				FA024FE41BB0505A0054A7F4 /* XcodeGhostScannerCLI */,
+				FA024FE11BB0505A0054A7F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA024FE11BB0505A0054A7F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FE21BB0505A0054A7F4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA024FE41BB0505A0054A7F4 /* XcodeGhostScannerCLI */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FEE1BB0505A0054A7F4 /* main.m */,
+				FA024FE51BB0505A0054A7F4 /* Package */,
+				FA024FE91BB0505A0054A7F4 /* Supporting Files */,
+			);
+			path = XcodeGhostScannerCLI;
+			sourceTree = "<group>";
+		};
+		FA024FE51BB0505A0054A7F4 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FE61BB0505A0054A7F4 /* DEBIAN */,
+				FA024FEB1BB0505A0054A7F4 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		FA024FE61BB0505A0054A7F4 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FE71BB0505A0054A7F4 /* control.txt */,
+				FA024FE81BB0505A0054A7F4 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		FA024FE91BB0505A0054A7F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FEA1BB0505A0054A7F4 /* PackageVersion.plist */,
+				FA024FF01BB0505A0054A7F4 /* XcodeGhostScannerCLI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA024FEB1BB0505A0054A7F4 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FEC1BB0505A0054A7F4 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		FA024FEC1BB0505A0054A7F4 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				FA024FED1BB0505A0054A7F4 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA024FE01BB0505A0054A7F4 /* XcodeGhostScannerCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA024FF31BB0505A0054A7F4 /* Build configuration list for PBXNativeTarget "XcodeGhostScannerCLI" */;
+			buildPhases = (
+				FA024FDD1BB0505A0054A7F4 /* Sources */,
+				FA024FDE1BB0505A0054A7F4 /* Frameworks */,
+				FA024FDF1BB0505A0054A7F4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeGhostScannerCLI;
+			productName = XcodeGhostScannerCLI;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA024FD91BB0505A0054A7F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					FA024FE01BB0505A0054A7F4 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = FA024FDC1BB0505A0054A7F4 /* Build configuration list for PBXProject "XcodeGhostScannerCLI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA024FD81BB0505A0054A7F4;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA024FE01BB0505A0054A7F4 /* XcodeGhostScannerCLI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA024FDF1BB0505A0054A7F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA024FDD1BB0505A0054A7F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA024FEF1BB0505A0054A7F4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA024FF11BB0505A0054A7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FA024FF21BB0505A0054A7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FA024FF41BB0505A0054A7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeGhostScannerCLI/XcodeGhostScannerCLI-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		FA024FF51BB0505A0054A7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeGhostScannerCLI/XcodeGhostScannerCLI-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA024FDC1BB0505A0054A7F4 /* Build configuration list for PBXProject "XcodeGhostScannerCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA024FF11BB0505A0054A7F4 /* Debug */,
+				FA024FF21BB0505A0054A7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA024FF31BB0505A0054A7F4 /* Build configuration list for PBXNativeTarget "XcodeGhostScannerCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA024FF41BB0505A0054A7F4 /* Debug */,
+				FA024FF51BB0505A0054A7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA024FD91BB0505A0054A7F4 /* Project object */;
+}

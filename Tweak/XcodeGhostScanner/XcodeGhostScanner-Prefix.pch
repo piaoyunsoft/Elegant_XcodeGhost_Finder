@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'XcodeGhostScanner' target in the 'XcodeGhostScanner' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
