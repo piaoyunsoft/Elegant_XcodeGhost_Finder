@@ -13,7 +13,7 @@
                                            freeWhenDone:NO];
         NSString* DataStr = [[[NSString alloc] initWithData:Data
                                                encoding:NSUTF8StringEncoding] autorelease];
-        NSRange Range=[DataStr rangeOfString:@"icloud-analysis.com"];
+        NSRange Range=[DataStr rangeOfString:@"icloud-analysis.com"];//Noobs.No Obfuscation
         
         if(Range.location!=NSNotFound){
             NSLog(@"%@ is Infected!!!",[[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleDisplayName"]);
@@ -26,6 +26,6 @@
     
     }
 
-
+exit(0);//Quit After Check
 
 }
